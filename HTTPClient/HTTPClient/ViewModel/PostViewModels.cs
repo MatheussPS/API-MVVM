@@ -20,6 +20,7 @@ namespace HTTPClient.ViewModel
 
         public ICommand getPostsCommand { get; }
 
+
         public PostViewModels() {
             getPostsCommand = new Command(getPosts);
             postService = new PostService();
