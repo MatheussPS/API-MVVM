@@ -5,16 +5,22 @@
              Title="CreatePostView">
     <VerticalStackLayout>
         <Label 
-            Text="Titulo da Postagem" />
+            Text="Titulo da Postagem"
+            />
         <Entry
             Placeholder="Título"
+            Text="{Binding Title}"
             />
         <Label 
             Text="Conteúdo da Postagem" />
         <Editor
             HeightRequest="150"
             Placeholder="Corpo do texto"
+            Text="{Binding Body}"
             />
-        
+        <Button
+            Text="FAZER Postagem"
+            Command="{Binding SavePostCommand}"
+            />
     </VerticalStackLayout>
 </ContentPage>
